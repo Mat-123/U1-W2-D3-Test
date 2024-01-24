@@ -228,17 +228,13 @@ if (crewMass < 500) {
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
 */
 
-const newgen = [];
-
 for (let i = 0; i < starWarsCharacters.length; i++) {
-  const gendreass = starWarsCharacters[i];
-
-  if (gendreass.gender === "n/a") {
-    newgen.push((gendreass.gender = "Robot"));
+  if (starWarsCharacters[i].gender === "n/a") {
+    starWarsCharacters[i].gender = "robots";
   }
 }
 
-console.log("Esercizio 8: ", newgen);
+console.log("Esercizio 8: ", starWarsCharacters);
 
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
